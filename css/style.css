@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #eee;
+}
+header {
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    position:  relative;
+    background: url("../img/1.jpg");
+    text-align: center;
+}
+header h1 {
+    padding-top: 10%;
+}
+header .logo-box {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    padding: 2%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+}
+.logo-labels, 
+.working-hours,
+.social-media,
+.about-company {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+.logo-box img {
+    width: 100%;
+    height: 450px;
+}
+.logo-labels p {
+    margin-top: 3%;
+    color: #8b8b8b;
+}
+.logo-labels {
+    padding-bottom: 5%;
+}
+.cm-btn {
+    background-color: rgb(20, 83, 255);
+    color: white;
+    min-width: 100%;
+}
+
+/*******************************
+* Working hours
+********************************/
+.working-hours {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.working-hours .introduction {
+    display: flex;
+    flex-direction: row;
+}
+.introduction h5 {
+    margin-left: 1%;
+}
+.closed-hours {
+    color: red;
+}
+.working-hours .hours-schedule {
+    padding-top: 5%;
+}
+.day-hour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.day {
+    font-weight: 600;
+}
+.hours {
+    color: #aaaaaa;
+}
+.contact-cards .card-details {
+    width: 40%;
+    margin: 1%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px 10px #0000;
+}
+.contact-cards {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+    display: block;
+}
+.contact-cards .card-details {
+    display: inline-block;
+}
+.inner-splitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*******************************
+* Social Networks
+********************************/
+.introduction {
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+.social-media {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.social-media .introduction {
+    display: flex;
+    flex-direction: row;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: small;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3%;
+}
+.contact i {
+    padding: 3%;
+    border-radius: 120px;
+    margin-right: 5%;
+    text-align: center;
+}
+.small-big-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.contact .small-title {
+    color: #b6b4b4;
+}
+.contact .big-title {
+    font-size: medium;
+}
+.about-company .introduction {
+    border-bottom: 1px solid #eee;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.about-company .about-text {
+    margin-top: 3%;
+    color: gray;
+    text-align: left;
+}
+@media screen and (max-width: 750px){
+    header {
+        width: 100%;
+        height: 50vh;
+        position:  relative;
+        text-align: center;
+    }
+    header .logo-box {
+        width: 95%;
+        border-radius: 10px;
+        position: absolute;
+        left: 3%;
+    }
+    .logo-box img {
+        width: 100%;
+        height: 200px;
+    }
+    .logo-labels p {
+        margin-top: 3%;
+        color: #8b8b8b;
+    }
+    .logo-labels {
+        padding-bottom: 5%;
+    }
+    .cm-btn {
+        background-color: rgb(20, 83, 255);
+        color: white;
+        min-width: 100%;
+    }
+    .contact-cards .card-details {
+        width: 90%;
+        margin: 1%;
+        padding: 4%;
+        background-color: rgb(255, 255, 255);
+    }
+    .contact-cards {
+        padding-top: 3%;
+        padding-bottom: 5%;
+        text-align: center;
+        background-color: #ffffff;
+        display: block;
+    }
+    .contact-cards .card-details {
+        display: block;
+    }
+    .about-company .about-text {
+        margin-top: 3%;
+        color: gray;
+        text-align: left;
+        font-size: small;
+    }
+    .introduction {
+        align-items: center;
+    }
+    .introduction h5 {
+        font-size: medium;
+    }
+    .day-hour .day, 
+    .day-hour .hours {
+        font-size: small;
+    }
+    .icon-name i, 
+    .icon-name span,
+    .inner-splitter i {
+        font-size: small;
+    } 
+    .small-title, 
+    .big-title {
+        font-size: small;
+    }
+    .logo-labels h1 b {
+        font-size: x-large;
+    }
+}
