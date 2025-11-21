@@ -5,7 +5,7 @@ use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 
 // URL for QR code
-$redirectUrl = "https://cornelius98.github.io/eyesight-systems-engineering-limited/";
+$redirectUrl = "https://chanda360.github.io/eyesight-engineering-limited/";
 
 // QR options
 $options = new QROptions([
