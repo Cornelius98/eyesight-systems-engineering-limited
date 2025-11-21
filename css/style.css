@@ -241,7 +241,7 @@ header .logo-box {
     .logo-labels h1 b {
         font-size: x-large;
     }
-    header h1 {
-        padding-top: 25% 8% 0% 8%;
+    header .company-name {
+        padding: 20% 8% 0% 8%;
     }
 }
