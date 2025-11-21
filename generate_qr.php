@@ -5,16 +5,17 @@ use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 
 // URL for QR code
-$redirectUrl = "https://www.google.com/";
+$redirectUrl = "https://cornelius98.github.io/eyesight-systems-engineering-limited/";
 
 // QR options
 $options = new QROptions([
-    'version'    => 7,
+    'version'    => QRCode::VERSION_AUTO,
     'eccLevel'   => QRCode::ECC_H,
     'scale'      => 8,
-    'imageBase64'=> false,                  // IMPORTANT: return raw PNG
+    'imageBase64'=> false,
     'outputType' => QRCode::OUTPUT_IMAGE_PNG,
 ]);
+
 
 // Generate RAW PNG data
 $qr = new QRCode($options);
@@ -69,3 +70,4 @@ imagepng($qrImage);
 imagedestroy($qrImage);
 imagedestroy($logo);
 imagedestroy($logoResized);
+?>
